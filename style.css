@@ -132,25 +132,24 @@ body{
   position: relative;
   top: -3.6rem;
 }
-
 @media screen and (max-width: 1024px) {
   .main-container {
-    width: 35%;
+    width: clamp(30%, 35%, 400px);
     margin-top: 5rem;
   }
   .wave-menu {
-    width: 180px;
+    width: clamp(160px, 18vw, 180px);
     left: 3.8rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .main-container {
-    width: 50%;
+    width: clamp(40%, 50%, 500px);
     margin-top: 4rem;
   }
   .wave-menu {
-    width: 160px;
+    width: clamp(140px, 20vw, 160px);
     height: 40px;
     left: 3rem;
   }
@@ -171,11 +170,11 @@ body{
 
 @media screen and (max-width: 480px) {
   .main-container {
-    width: 70%;
+    width: clamp(60%, 70%, 90%);
     margin-top: 3rem;
   }
   .wave-menu {
-    width: 140px;
+    width: clamp(120px, 25vw, 140px);
     height: 35px;
     left: 2.2rem;
     top: 8px;
@@ -197,11 +196,11 @@ body{
 
 @media screen and (max-width: 360px) {
   .main-container {
-    width: 85%;
+    width: clamp(80%, 85%, 95%);
     margin-top: 2rem;
   }
   .wave-menu {
-    width: 120px;
+    width: clamp(100px, 30vw, 120px);
     height: 30px;
     left: 1.8rem;
     top: 6px;
