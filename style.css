@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Carter+One&family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(assets/WhatsApp\ Image\ 2025-06-06\ at\ 15.40.29_18c9e425.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  font-family: "Carter One", system-ui;
+  color: rgb(24, 20, 1);
+}
+.main-container{
+  width: 25%;
+  height: auto;
+  margin-top: 7rem;
+  background-color: rgb(150, 108, 31,0.637);
+  backdrop-filter: blur(10);
+  border-radius: 10px;
+  text-align: center;
+}
+/* layrs */
+.wave-menu{
+  border-radius: 50px;
+  width: 200px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  transition: ease 0.2s;
+  position: relative;
+  background: transparent;
+  left: 4.3rem;
+  top: 10px;
+}
+.wave-menu li{
+  list-style: none;
+  height: 30px;
+  width: 4px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0,0.637);
+  margin: 0 6px;
+  padding: 0;
+  animation-name: wave1;
+  animation-duration: 0,3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: ease 0.2s;
+  animation: wave 0.5s infinite alternate;
+}
+.wave-menu.playing.li{
+  animation-play-state: running;
+}
+.wave-menu li:nth-child(2){
+  animation-name: wave2;
+  animation-delay: 0.2s;
+}
+.wave-menu li:nth-child(3){
+ animation-name: wave3;
+  animation-delay: 0.23s;
+  animation-duration: 0.4s;
+}
+.wave-menu li:nth-child(4){
+   animation-name: wave4;
+  animation-delay: 0.1s;
+  animation-duration: 0.3s;
+}
+.wave-menu li:nth-child(5){
+  animation-delay: 0.5s;
+}
+.wave-menu li:nth-child(6){
+   animation-name: wave2;
+  animation-delay: 0.5s;
+}
+.wave-menu li:nth-child(8){
+   animation-name: wave4;
+  animation-delay: 0.4s;
+  animation-duration: 0.25s;
+}
+.wave-menu li:nth-child(9){
+   animation-name: wave3;
+  animation-delay: 0.15s;
+}
+@keyframes wave1{
+  from{
+    transform: scaleY(1);
+  }
+  to{
+    transform: scaleY(0.5);
+  }
+}
+@keyframes wave2{
+  from{
+    transform: scaleY(0.3);
+  }
+  to{
+    transform: scaleY(0.6);
+  }
+}
+@keyframes wave3{
+  from{
+    transform: scaleY(0.6);
+  }
+  to{
+    transform: scaleY(0.8);
+  }
+}
+@keyframes wave4{
+  from{
+    transform: scaleY(0.2);
+  }
+  to{
+    transform: scaleY(0.5);
+  }
+}
+#img{
+  border-radius: 5px;
+}
+.fa-solid{
+  font-size: 40px;
+  position: relative;
+  top: 21px;
+}
+#control{
+  margin: 0.9em;
+  position: relative;
+  top: -3.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-container {
+    width: 35%;
+    margin-top: 5rem;
+  }
+  .wave-menu {
+    width: 180px;
+    left: 3.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 50%;
+    margin-top: 4rem;
+  }
+  .wave-menu {
+    width: 160px;
+    height: 40px;
+    left: 3rem;
+  }
+  .wave-menu li {
+    height: 25px;
+    width: 3px;
+    margin: 0 5px;
+  }
+  .fa-solid {
+    font-size: 35px;
+    top: 18px;
+  }
+  #control {
+    margin: 0.7em;
+    top: -3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    width: 70%;
+    margin-top: 3rem;
+  }
+  .wave-menu {
+    width: 140px;
+    height: 35px;
+    left: 2.2rem;
+    top: 8px;
+  }
+  .wave-menu li {
+    height: 20px;
+    width: 2.5px;
+    margin: 0 4px;
+  }
+  .fa-solid {
+    font-size: 30px;
+    top: 15px;
+  }
+  #control {
+    margin: 0.5em;
+    top: -2.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main-container {
+    width: 85%;
+    margin-top: 2rem;
+  }
+  .wave-menu {
+    width: 120px;
+    height: 30px;
+    left: 1.8rem;
+    top: 6px;
+  }
+  .wave-menu li {
+    height: 18px;
+    width: 2px;
+    margin: 0 3px;
+  }
+  .fa-solid {
+    font-size: 25px;
+    top: 12px;
+  }
+  #control {
+    margin: 0.4em;
+    top: -2rem;
+  }
+}
