@@ -16,7 +16,7 @@ body{
 }
 .main-container{
   width: 25%;
-  height: auto;
+  height: 70vh;
   margin-top: 7rem;
   background-color: rgb(150, 108, 31,0.637);
   backdrop-filter: blur(10);
@@ -132,88 +132,105 @@ body{
   position: relative;
   top: -3.6rem;
 }
+/* 1024px and below */
 @media screen and (max-width: 1024px) {
   .main-container {
-    width: clamp(30%, 35%, 400px);
+    width: 90%;
     margin-top: 5rem;
   }
+
   .wave-menu {
-    width: clamp(160px, 18vw, 180px);
-    left: 3.8rem;
+    width: 180px;
+    left: 3.5rem;
   }
 }
 
+/* 768px and below */
 @media screen and (max-width: 768px) {
   .main-container {
-    width: clamp(40%, 50%, 500px);
+    width: 85%;
     margin-top: 4rem;
   }
+
   .wave-menu {
-    width: clamp(140px, 20vw, 160px);
+    width: 160px;
     height: 40px;
     left: 3rem;
   }
+
   .wave-menu li {
     height: 25px;
     width: 3px;
     margin: 0 5px;
   }
+
   .fa-solid {
     font-size: 35px;
     top: 18px;
   }
+
   #control {
     margin: 0.7em;
     top: -3rem;
   }
 }
 
+/* 480px and below */
 @media screen and (max-width: 480px) {
   .main-container {
-    width: clamp(60%, 70%, 90%);
+    width: 95%;
     margin-top: 3rem;
   }
+
   .wave-menu {
-    width: clamp(120px, 25vw, 140px);
+    width: 140px;
     height: 35px;
     left: 2.2rem;
     top: 8px;
   }
+
   .wave-menu li {
     height: 20px;
     width: 2.5px;
     margin: 0 4px;
   }
+
   .fa-solid {
     font-size: 30px;
     top: 15px;
   }
+
   #control {
     margin: 0.5em;
     top: -2.5rem;
   }
 }
 
+/* 360px and below */
 @media screen and (max-width: 360px) {
   .main-container {
-    width: clamp(80%, 85%, 95%);
+    width: 98%;
     margin-top: 2rem;
   }
+
   .wave-menu {
-    width: clamp(100px, 30vw, 120px);
+    width: 120px;
     height: 30px;
     left: 1.8rem;
     top: 6px;
   }
+
   .wave-menu li {
     height: 18px;
     width: 2px;
     margin: 0 3px;
   }
+
   .fa-solid {
     font-size: 25px;
     top: 12px;
   }
+
   #control {
     margin: 0.4em;
     top: -2rem;
