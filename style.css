@@ -218,8 +218,8 @@ body{
 @media screen and (max-width: 414px) {
   .main-container {
     width: 98%;
-    margin-top: 2rem;
-    height: 60vh;
+    margin-top: 4rem;
+    height: 55vh;
   }
    body{
     background-size: cover;
@@ -230,7 +230,7 @@ body{
   .wave-menu {
     width: 120px;
     height: 30px;
-    left: 8rem;
+    left: 8.3rem;
     top: 6px;
   }
 
