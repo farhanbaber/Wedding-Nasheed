@@ -214,11 +214,12 @@ body{
   }
 }
 
-/* 360px and below */
+/* 414px and below */
 @media screen and (max-width: 414px) {
   .main-container {
     width: 98%;
     margin-top: 2rem;
+    height: 50vh;
   }
    body{
     background-size: cover;
@@ -227,7 +228,7 @@ body{
   .wave-menu {
     width: 120px;
     height: 30px;
-    left: 2.8rem;
+    left: 4.5rem;
     top: 6px;
   }
 
@@ -239,7 +240,7 @@ body{
 
   .fa-solid {
     font-size: 25px;
-    top: 12px;
+    top: 16px;
   }
 
   #control {
