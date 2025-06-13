@@ -219,6 +219,7 @@ body{
   .main-container {
     width: 98%;
     margin-top: 2rem;
+    height: 60vh;
   }
    body{
     background-size: cover;
@@ -229,7 +230,7 @@ body{
   .wave-menu {
     width: 120px;
     height: 30px;
-    left: 7.2rem;
+    left: 8rem;
     top: 6px;
   }
 
@@ -241,7 +242,7 @@ body{
 
   .fa-solid {
     font-size: 25px;
-    top: 14px;
+    top: 11px;
     position: relative;
   }
 
