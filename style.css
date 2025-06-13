@@ -215,7 +215,7 @@ body{
 }
 
 /* 360px and below */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 414px) {
   .main-container {
     width: 98%;
     margin-top: 2rem;
