@@ -137,11 +137,16 @@ body{
   .main-container {
     width: 90%;
     margin-top: 5rem;
+  
+  }
+  body{
+    background-size: cover;
   }
 
   .wave-menu {
     width: 180px;
-    left: 3.5rem;
+    left: 4.5rem;
+    margin: 0.9em;
   }
 }
 
@@ -155,7 +160,7 @@ body{
   .wave-menu {
     width: 160px;
     height: 40px;
-    left: 3rem;
+    left: 4.5rem;
   }
 
   .wave-menu li {
@@ -170,7 +175,7 @@ body{
   }
 
   #control {
-    margin: 0.7em;
+    margin: 0.9em;
     top: -3rem;
   }
 }
@@ -181,11 +186,14 @@ body{
     width: 95%;
     margin-top: 3rem;
   }
+   body{
+    background-size: cover;
+  }
 
   .wave-menu {
     width: 140px;
     height: 35px;
-    left: 2.2rem;
+    left: 3.2rem;
     top: 8px;
   }
 
@@ -201,7 +209,7 @@ body{
   }
 
   #control {
-    margin: 0.5em;
+    margin: 0.9em;
     top: -2.5rem;
   }
 }
@@ -212,11 +220,14 @@ body{
     width: 98%;
     margin-top: 2rem;
   }
+   body{
+    background-size: cover;
+  }
 
   .wave-menu {
     width: 120px;
     height: 30px;
-    left: 1.8rem;
+    left: 2.8rem;
     top: 6px;
   }
 
@@ -232,7 +243,7 @@ body{
   }
 
   #control {
-    margin: 0.4em;
-    top: -2rem;
+    margin: 0.9em;
+    top: -1.5rem;
   }
 }
